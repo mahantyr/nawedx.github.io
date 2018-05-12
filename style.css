@@ -3,6 +3,7 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 50px;
+
 }
 p{
 	font-size: 120%;
@@ -12,6 +13,10 @@ h4{
 }
 blockquote {
     border-left: 5px solid #000080;
+}
+.navbar{
+	max-width: -webkit-calc(800px - (60px)); max-width: calc(800px - (60px)); margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; }
+	@media screen and (max-width: 600px) { .wrapper { max-width: -webkit-calc(800px - (45px)); max-width: calc(800px - (45px)); padding-right: 22.5px; padding-left: 22.5px; }
 }
 
 .wrapper { max-width: -webkit-calc(800px - (60px)); max-width: calc(800px - (60px)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
