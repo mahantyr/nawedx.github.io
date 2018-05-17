@@ -43,6 +43,36 @@
 		<a href="diary-apr.html"> Apr </a>
 	</h4>
 	<div id="content" style="text-align:justify">
+		<h3>May 17, 2018</h3>
+		<p>
+			I did some more research. I updated my kernel using dnf update kernel command. Installed the kernel-devel package
+			for my distribution kernel. Then compiled the hello kernel module. It worked and then ran insmod ./hello-kernel.ko as root.
+			It gave error message that permission denied. I researched more and found that to load module using insmod the secure boot has to be turned off.
+			Did that in BIOS menu and then the module successfully loaded using insmod. Then, I tried to find the kernel log at /var/log/messages.
+			The 'messages' file was not their and then I read the README in /var/log to find that journalctl keeps all the log files.
+			I checked the journalctl and found the "Hello, World!" message when the module was loaded. Delighted to write my first kernel module.
+			And I know it only gets tougher from here. I am ready.
+		</p>
+		<h3>May 16, 2018</h3>
+		<p>
+			I tried to install older version of GCC that was compatible with kernel 2.6.x but alas got more errors. It is always like
+			some module is missing. I finally thought of downloading the latest kernel and compiling it. I downloaded the kernel,
+			extracted it, generated defconfig for make and then executed make. Everything happened without error. Then, updated the grub and rebooted.
+			I was unable to boot using the newly loaded kernel and had to boot using Fedora's distribution kernel.
+		</p>
+		<h3>May 15, 2018</h3>
+		<p>
+			I started writing a simple hello kernel module. I wrote the hello kernel program in C and wrote the Makefile.
+			Everything is given in the book as well as many online resources and blogs have similar hello kernel program.
+			It was easy to write the program and makefile but it didn't execute. The book is using linux kernel 2.6.x.
+			It is way older version than today's kernel that runs 4.16.x. I tried to compile the older kernel multiple time but failed due
+			different version of GCC.
+		</p>
+		<h3>May 14, 2018</h3>
+		<p>
+			I thought I should explore linux kernel development and device driver development first before diving into X.org.
+			So, I started reading "Linux Device Driver" by Alessandro Rubini. This book also has information on linux kernel development.
+		</p>
 	<h3>May 13, 2018</h3>
 	<p>
 		Read the book "The Subtle Art of Not Giving a F*ck" by Mark Manson. It is an off beat self help book. I found an instant connect with the book.
